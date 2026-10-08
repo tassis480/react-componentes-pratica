@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #1f2937;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  width: min(100% - 2rem, 960px);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.titulo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.titulo h1 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.aluno,
+.nota,
+.produto {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: white;
+}
+
+.aluno h3,
+.produto h3 {
+  margin-top: 0;
+}
+
+.nota {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.preco {
+  font-weight: 700;
+}
+
+.disponivel {
+  color: #15803d;
+}
+
+.indisponivel {
+  color: #b91c1c;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
